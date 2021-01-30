@@ -1,4 +1,3 @@
-
 let textData = document.querySelector('#input');
 let allButton = document.querySelectorAll('button');
 let screenOutput = '';
@@ -13,6 +12,7 @@ for(let btn of allButton){
         }
         else if(buttonValue=='='){
             textData.value = eval(screenOutput);
+            screenOutput =" ";
         }
         else{
             screenOutput += buttonValue;
