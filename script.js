@@ -2,7 +2,7 @@
 let textData = document.querySelector('#input');
 let allButton = document.querySelectorAll('button');
 let screenOutput = '';
-for(btn of allButton){
+for(let btn of allButton){
     
     btn.addEventListener('click',(e)=>{
        let buttonValue = e.target.innerText;
